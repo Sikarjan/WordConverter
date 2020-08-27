@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QStringListModel>
 #include <QClipboard>
+#include <QTranslator>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -28,6 +30,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QTranslator translator;
     QString input;
     QString converted;
     QStringList words;

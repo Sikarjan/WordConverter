@@ -29,7 +29,7 @@ void MainWindow::toClipboard(const QString &text)
         QThread::msleep(1); //workaround for copied text not being available...
     #endif
 
-    ui->statusbar->showMessage(tr("Copied ")+text+tr(" to clipboard."), 3000);
+    ui->statusbar->showMessage(tr("Copied %1 to clipboard.").arg(text), 3000);
 }
 
 
